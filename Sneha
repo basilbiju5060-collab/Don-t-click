@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sneha ❤️ Basil</title>
+  <title>Agna ❤️ Arjun</title>
 
   <style>
     body {
@@ -167,7 +167,7 @@
   </audio>
 
   <div class="card">
-    <h1>❤️ Sneha ❤️</h1>
+    <h1>❤️ Agna ❤️</h1>
     <h2>Will you be my Valentine? 💘</h2>
 
     <div class="buttons">
@@ -184,7 +184,7 @@
     </div>
 
     <div class="footer">
-      — Basil 💌
+      — Arjun 💌
     </div>
   </div>
 
@@ -192,7 +192,7 @@
   <div class="popup" id="popup">
     <div class="popup-box">
       <h3>YAYYY!! 😭❤️</h3>
-      <p>Sneha, you just made Basil the happiest 💘</p>
+      <p>Agna, you just made Arjun the happiest 💘</p>
       <button class="closeBtn" id="closeBtn">Aww ❤️</button>
     </div>
   </div>
