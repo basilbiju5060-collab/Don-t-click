@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agna ❤️ Arjun</title>
+  <title>Sneha ❤️ Basil</title>
 
   <style>
     body {
@@ -161,13 +161,13 @@
 
 <body>
 
-  <!-- Background music (phone may require one tap to start) -->
+  <!-- Background music -->
   <audio id="bgMusic" loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
   </audio>
 
   <div class="card">
-    <h1>❤️ Agna ❤️</h1>
+    <h1>❤️ Sneha ❤️</h1>
     <h2>Will you be my Valentine? 💘</h2>
 
     <div class="buttons">
@@ -184,7 +184,7 @@
     </div>
 
     <div class="footer">
-      — Arjun 💌
+      — Basil 💌
     </div>
   </div>
 
@@ -192,7 +192,7 @@
   <div class="popup" id="popup">
     <div class="popup-box">
       <h3>YAYYY!! 😭❤️</h3>
-      <p>Agna, you just made Arjun the happiest 💘</p>
+      <p>Sneha, you just made Basil the happiest 💘</p>
       <button class="closeBtn" id="closeBtn">Aww ❤️</button>
     </div>
   </div>
@@ -204,12 +204,10 @@
     const closeBtn = document.getElementById("closeBtn");
     const bgMusic = document.getElementById("bgMusic");
 
-    // Start music after first tap (iPhone blocks autoplay)
     window.addEventListener("click", () => {
       bgMusic.play().catch(() => {});
     }, { once: true });
 
-    // No button runs away
     function moveNoButton() {
       const card = document.querySelector(".card");
       const cardRect = card.getBoundingClientRect();
@@ -227,13 +225,11 @@
 
     noBtn.addEventListener("mouseenter", moveNoButton);
 
-    // iPhone touch
     noBtn.addEventListener("touchstart", (e) => {
       e.preventDefault();
       moveNoButton();
     });
 
-    // Yes button popup
     yesBtn.addEventListener("click", () => {
       popup.style.display = "flex";
       bgMusic.play().catch(() => {});
@@ -243,7 +239,6 @@
       popup.style.display = "none";
     });
 
-    // Floating hearts
     function createHeart() {
       const heart = document.createElement("div");
       heart.className = "heart";
@@ -258,11 +253,6 @@
 
     setInterval(createHeart, 500);
   </script>
-
-<!-- Background music -->
-<audio id="bgMusic" loop>
-  <source src="Reflections.mp3" type="audio/mpeg">
-</audio>
 
 </body>
 </html>
